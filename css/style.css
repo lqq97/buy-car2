@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS 重置 */
+body, div, p, h1, h2, h3, h4,
+ul, li, dl, dt, dd, ol, form, table, tr, td,
+span, label, input, select, option, a, img, i,
+em, strong, b {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    color: #333333;
+}
+
+html {
+    /*rem单位永远以html为参考缩放,%和em以父元素参考*/
+    font-size: 625%;
+}
+
+body {
+    font-family: "微软雅黑";
+    color: #000;
+    max-width: 750px; /*按照ps里的图的宽度大小设置*/
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 0.3rem; /*body里默认使用最多的字体大小*/
+    overflow: hidden;/*iscroll 必加*/
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    display: block;
+}
+
+/*首页*/
+#home-page{ width: 100%; height: auto;}
+#home-page img{ width: 100%; display: block;}
+.name{ width: 100%; height: 0.77rem; border-bottom:#f7f7f7 0.22rem solid;}
+.peo-name{ float: left; width: 3.39rem; margin: 0.33rem 0 0 0.36rem;}
+.com-name{ float: left; width: 3rem; margin: 0.33rem 0 0 0.4rem; color: #666; }
+.slider1{ width:100%; height:3.1rem;float: left;}
+.slider1 img{ display: block; width:100%; height: 100%;}
+.main{ height: 8.1rem; border-bottom: #c7c7cd 0.01rem solid; background: #f7f7f7;}
+.list-left,.list-right{float:left; height: 4.95rem; width:3.65rem;}
+.list-left li,.list-right li{ width: 3.5rem; height: 1.5rem;
+    margin-top: 0.15rem;}
+.a{ margin: 0.25rem 0 0 0.16rem;}
+.c,.e{ margin: 0.16rem 0 0 0.16rem;}
+.b{ margin: 0.25rem 0 0 0.2rem;}
+.d,.f{ margin: 0.15rem 0 0 0.2rem;}
+.link{ height: 2.02rem; line-height: 2.02rem; text-align: center;}
+.link span{ color:#666; font-size: 0.34rem;}
+.bottom{ height: 1rem; position: fixed; bottom: 0;}
+.bottom li{ float: left; width: 3.75rem; height: 1rem;}
+
+/*car-1*/
+#sell-car{  position:relative;width: 100%; height:13.5rem; margin: 0 auto;}
+#sell-car img{ width: 100%;}
+.nav{  border-bottom: #ccc 1px solid; margin: 0 auto; background: #fff; height: 1rem; }
+.nav li{float: left; width: 2.5rem; margin: 0.3rem auto; text-align: center;
+    color: #959595;font-size: 0.3rem; ;}
+.car-1,.car-2{ border-bottom: #f7f7f7 1px solid; padding-bottom: 0.24rem;}
+.left{ float:left;width: 2.01rem;margin: 0.27rem 0 0 0.16rem;}
+.right{ float:left; margin-top: 0.25rem;height: 1.51rem;}
+.car-inf{ height: 0.4rem; line-height: 0.4rem; text-align: center;
+         color: #000; font-size:0.34rem;font-weight: bold;}
+.data{ width: 4.83rem; margin: 0.65rem 0 0 0.2rem;}
+.data li{ float: left;}
+.num{color:#d5d713;font-size: 0.24rem; width: 2.58rem;}
+.num span{ color:#d5d713;font-size: 0.34rem; }
+.thr{color:#c1c1c1;font-size: 0.16rem; margin-left: 3.6rem; margin-top:-0.2rem;}
+.blank{ height:6.27rem;  background: #f7f7f7; }
+.bottom-1{ border-top: #c7c7cd 0.01rem solid;
+     background:#f7f7f7;  position: fixed; bottom: 0;}
+.bottom-1 li{ float: left; width: 3.75rem; }
+
+.list{ margin: 0 auto ;}
+.header{  position:absolute;left: 0; top: 0;  width:100%;  }
+.container{ position:absolute;top: 1rem; bottom: 1rem; left: 0; width: 100%; overflow: hidden;}
+.footer{ position:absolute;left: 0; bottom: 0; height: 1rem; width:100%;  }
+/*重新加载*/
+.reload{ position:absolute; top:-1rem; width:7.5rem; margin: 0 auto; text-align: center; line-height: 1rem;}
+/*更多加载*/
+.append{position:absolute; bottom:-1rem; width: 100%; text-align: center; line-height: 1rem;}
+
+
+
+
+/*car-2*/
+#sell-manager{ width: 100%; height: auto;}
+#sell-manager img{ width: 100%; }
+.send{ height: 1.19rem;border-bottom: #f7f7f7 0.24rem solid; }
+.border{width: 3.82rem; border: #ecee11 0.01rem solid;
+     text-align: center;  margin: 0.24rem 0 0 1.84rem;}
+.border span{ color:#dadc3b; font-size: 0.24rem; height: 0.66rem ;
+    line-height: 0.66rem;
+     text-align: center;}
+.yes,.none{ float:left;margin: 0.66rem 0 0 0.21rem; width: 0.5rem;}
+.left-2{ float:left;width: 2.01rem;margin: 0.27rem 0 0 0.16rem;}
+.right-2{ float:left; margin-top: 0.25rem;height: 1.51rem; width:4.2rem;}
+.car-inf-2{ height: 0.4rem; line-height: 0.4rem;margin-left: 0.22rem;
+    color: #000; font-size:0.34rem;font-weight: bold;}
+.thr{color:#c1c1c1;font-size: 0.16rem; margin-left: 2.9rem; margin-top:-0.3rem;}
+
+/*car-3*/
+#buy-car{ width: 100%; height: auto;}
+#buy-car img{ width: 100%; }
+.car-func,.car-func-2{ line-height: 0.3rem; text-align: center;
+    color: #b8b8b8; font-size:0.2rem; margin-top: 0.18rem;}
+.num-1,.num-2{color:#d5d713;font-size: 0.32rem; margin-top: -0.4rem;}
+.data-1{width: 4.83rem; margin: 0.65rem 0 0 0.2rem;}
+.thr-1{color:#c1c1c1;font-size: 0.16rem; margin-left: 4rem; margin-top:-0.3rem;}
+
+/*car-4*/
+#buy-manager{ width: 100%; height: auto;}
+#buy-manager img{ width: 100%; }
+.thr-3{color:#c1c1c1;font-size: 0.16rem; margin-left: 3.3rem; margin-top:-0.3rem;}
+
+/*car-5*/
+#help{ width: 100%; height: auto;}
+#help img{ width: 100%; }
+.help-2{ float:left; margin-top: 0.4rem; width: 1.1rem; height: 1rem; text-align: center;
+    line-height: 1rem;
+    border-right: #c7c7cd 0.01rem solid;}
+.r-h-2{ float: left; margin: 0.4rem 0 0 0.66rem;}
+.thr-h{color:#c1c1c1;font-size: 0.16rem; margin-left: 4rem; margin-top:-0.3rem;}
+.car-h-2{height: 0.4rem; line-height: 0.4rem;;
+    color: #000; font-size:0.34rem;font-weight: bold;}
+.car-func-h{ line-height: 0.3rem;
+    color: #b8b8b8; font-size:0.2rem; margin-top: 0.18rem;}
+
+/*卖车发布*/
+#sell-post{ width: 100%; height: auto;}
+#sell-post img{ width: 100%; }
+.blank-1{ height: 0.52rem; border-bottom: #c8c7cc 0.01rem solid;
+    border-top:#c8c7cc 0.01rem solid ;text-indent:-99em; overflow: hidden;}
+.car-type-1{ width:7.2rem;height: 0.9rem; margin-left:0.3rem;
+    border-bottom:#c8c7cc 0.01rem solid;}
+.a-1{ float: left; margin-top: 0.2rem;font-weight:  bold;}
+.a-2{ float: right;  margin:0.2rem 0.3rem 0 0 ; color: #c7c7cc;
+ line-height: 0.44rem;}
+.car-type-2{ width:7.2rem;height: 0.9rem; margin-left:0.3rem;}
+.blank-2{ height: 0.62rem;border-top:#c8c7cc 0.01rem solid ;
+    border-bottom:#c8c7cc 0.01rem solid ;
+    text-indent:-99em; overflow: hidden;}
+.blank-3{ height: 2.2rem;border-top:#c8c7cc 0.01rem solid ;
+    border-bottom:#c8c7cc 0.01rem solid;}
+.content{margin: 1.68rem 0 0 0.3rem; color: #c7c7cc;
+    padding-bottom: 0.33rem;}
+.blank-4{ height: 0.88rem; border-bottom: #c8c7cc 0.01rem solid;
+    border-top:#c8c7cc 0.01rem solid ;}
+.blank-4 img{ float:left;width: 0.58rem; height: 0.59rem;
+    margin: 0.14rem 0 0 0.18rem;}
+.photo{ float:left; width: 6.62rem ;height: 0.88rem;
+    line-height: 0.88rem;text-align: center;}
+.send-pho{float: left; width: 1.6rem;}
+.send-a{float: right; color:#c8c7cc;}
+.sent{ padding-top: 2.32rem;}
+.y-sent{ width: 6.8rem;border-radius:0.01rem; background:#f1f330;
+         margin-left: 0.32rem; }
+.y-sent span{ color: #333; text-align: center; line-height: 1rem;
+    margin-left:3.1rem; font-weight: bold;}
+
+
+/*卖车详情*/
+#sell-news{ width: 100%; height: auto;}
+#sell-news img{ width: 100%; }
+.car-info{ float: left; width:7.5rem; border-top: #f1f1f1 0.15rem solid;
+    border-bottom:#f1f1f1 0.01rem solid;}
+.car-type-3{ width: 4.76rem; height: 0.68rem; line-height: 0.68rem;
+     margin: 0.19rem 0 0 0.46rem; font-weight: bold;}
+.car-color{ width:2.25rem; height: 0.5rem;}
+.color-much{ float: left;margin-left: 0.46rem; height: 2.12rem;}
+.car-c-1,.car-c-2{width: 2.25rem; line-height: 0.5rem; color: #999;}
+.much{ height: 1.12rem; line-height: 1.12rem; color: #d5d713;}
+.data-type{ float:left; height: 2.12rem; color: #999;}
+.car-data{ line-height: 0.5rem;}
+.car-c-3{ line-height: 0.5rem;}
+.car-c-4{ height: 1.62rem; line-height: 0.5rem;}
+.car-info-2{float: left; width:7.5rem; border-top: #f1f1f1 0.15rem solid;
+    border-bottom:#f1f1f1 0.01rem solid; color:#c7c7cd; height: 1.66rem;}
+.car-c-5{ float:left;width:0.7rem;margin: 0.31rem 0 0 0.27rem;}
+.car-c-6{float: left; width: 6.1rem;line-height: 0.32rem; font-size: 0.265rem;
+ margin-top: 0.32rem;}
+.car-c-7{width: 3.18rem; height: 0.6rem; line-height: 0.6rem;
+    margin: 0.12rem 0 0 0.35rem; color: #000; font-weight: bold;}
+.car-c-8{ height: 0.5rem; line-height: 0.5rem; margin-left: 0.35rem;}
+.grey{ width: 7.5rem;border-bottom: #c8c7cc 0.01rem solid;overflow: hidden;
+    text-indent: -99em; height:1.6rem; background: #f1f1f1;}
+.grey-2{ height: 1rem; background: #f4f4f4;}
+
+
+/*买车发布*/
+#buy-post{ width: 100%; height: auto;}
+#buy-post img{ width: 100%; }
+.a-1{ float: left; margin-top: 0.2rem;font-weight:  bold;}
+.b-2{ float: left;  margin:0.2rem  0 0 1.45rem; ; color: #c7c7cc;
+    line-height: 0.44rem;}
+.car-type-5{ border-bottom: #c8c7cc 0.01rem solid;width:7.2rem;height: 0.9rem;
+    margin-left:0.3rem;}
+.sent-2{ padding-top: 1.6rem;}
+.y-sent-2{ width: 6.8rem; border-radius:0.01rem; background:#f1f330;
+    margin-left: 0.32rem;}
+.y-sent-2 span{ color: #333; text-align: center; line-height: 1rem;
+    margin-left:3.1rem; font-weight: bold;}
+
+
+/*买车详情*/
+#buy-news{ width: 100%; height: auto;}
+#buy-news img{ width: 100%; }
+.person{ height: 1.52rem;}
+.per-1{ float: left; width: 1rem; height: 1rem; margin: 0.25rem 0 0 0.4rem;}
+.per-name{ float: left; height: 1rem; }
+.per-name-1{ height: 1rem; line-height: 1rem;font-weight: bold; }
+.company{  font-size: 0.28rem; color: #e5e5e5; margin-top: -0.2rem;}
+.color-much-2,.data-type-2{ float: left; height: 2.12rem;
+    margin: 0.45rem 0 0 0.46rem; color: #999;}
+.grey-a{ width: 7.5rem;border-bottom: #c8c7cc 0.01rem solid;overflow: hidden;
+    text-indent: -99em; height:4.95rem; background: #f1f1f1;}
+.grey-2-a{ height: 1rem; background: #f4f4f4;}
+
+
+
+/*委托发布*/
+#help-sent{ width: 100%; height: auto;}
+#help-sent img{ width: 100%; }
+.blank-a{ height: 3.66rem;border-top:#f7f7f7 0.17rem solid ;
+    border-bottom:#c8c7cc 0.01rem solid;}
+.content-a{margin: 0.34rem 0 0 0.32rem; color: #c7c7cc;
+    padding-bottom: 0.33rem;}
+.sent-2-a{ padding-top: 2rem; background: #f7f7f7;}
+.y-sent-a{ width: 6.8rem; border-radius:0.01rem; background:#f1f330;
+    margin-left: 0.32rem;}
+.y-sent-a span{ color: #333; text-align: center; line-height: 1rem;
+    margin-left:3.1rem; font-weight: bold;}
